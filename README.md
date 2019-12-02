@@ -11,14 +11,14 @@
 This is a basic Laravel project with JWT token. Here implemented basic CRUD operations and Authentication.
 
 ## post requests
-url:  example.com/api/auth/login<br> 
+Login:  www.example.com/api/auth/login<br> 
     body:
     
     email: example@email.com
     password: example_password
     
 
-url:   example.com/api/auth/register<br>
+Registration:   www.example.com/api/auth/register<br>
     body:
      
     name: examp_name
@@ -26,18 +26,18 @@ url:   example.com/api/auth/register<br>
     password: example_password
     password_confirmation: example_password
     
-url:   example.com/api/auth/me<br>
+About Me:   www.example.com/api/auth/me<br>
     body:
      
     token: bearer_token
     
 
-url:   example.com/api/auth/logout<br>
+Logout:   www.example.com/api/auth/logout<br>
     body:
      
     token: bearer_token
     
-url:   example.com/api/auth/payload<br>
+Payload:   www.example.com/api/auth/payload<br>
     body:
      
     token: bearer_token
