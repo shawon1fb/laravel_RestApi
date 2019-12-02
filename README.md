@@ -10,8 +10,8 @@
 # About Project
 This is a basic Laravel project with JWT token. Here implemented basic CRUD operations and Authentication.
 
-#Authentication
-##Request method POST ::
+# Authentication
+## Request method POST ::
 Login:  www.example.com/api/auth/login<br> 
     body:
     
@@ -55,10 +55,10 @@ payload response:
     "nam": "Shahanul Shaheb"
  
  
-#CRUD operations
-#####Details coming soon ...
+# CRUD operations
+##### Details coming soon ...
 
-#Route List
+# Route List
 
      | GET|HEAD  | /                     |                 | Closure                                            | web          |
     |        | POST      | api/auth/login        |                 | App\Http\Controllers\AuthController@login          | api          |
