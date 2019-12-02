@@ -1,0 +1,6 @@
+echo "# laravel_RestApi" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/shawon1fb/laravel_RestApi.git
+git push -u origin master
