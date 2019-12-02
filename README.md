@@ -60,7 +60,11 @@ payload response:
 
 # Route List
 
-     | GET|HEAD  | /                     |                 | Closure                                            | web          |
+     
+    +--------+-----------+-----------------------+-----------------+----------------------------------------------------+--------------+
+    | Domain | Method    | URI                   | Name            | Action                                             | Middleware   |
+    +--------+-----------+-----------------------+-----------------+----------------------------------------------------+--------------+
+    |        | GET|HEAD  | /                     |                 | Closure                                            | web          |
     |        | POST      | api/auth/login        |                 | App\Http\Controllers\AuthController@login          | api          |
     |        | POST      | api/auth/logout       |                 | App\Http\Controllers\AuthController@logout         | api,auth:api |
     |        | POST      | api/auth/me           |                 | App\Http\Controllers\AuthController@me             | api,auth:api |
@@ -77,4 +81,10 @@ payload response:
     |        | PUT|PATCH | api/studet/{studet}   | studet.update   | App\Http\Controllers\Api\StudentController@update  | api          |
     |        | DELETE    | api/studet/{studet}   | studet.destroy  | App\Http\Controllers\Api\StudentController@destroy | api          |
     |        | POST      | api/subject           | subject.store   | App\Http\Controllers\Api\SubjectController@store   | api          |
-    |        | GET|HEAD  | api/subject           
+    |        | GET|HEAD  | api/subject           | subject.index   | App\Http\Controllers\Api\SubjectController@index   | api          |
+    |        | DELETE    | api/subject/{subject} | subject.destroy | App\Http\Controllers\Api\SubjectController@destroy | api          |
+    |        | PUT|PATCH | api/subject/{subject} | subject.update  | App\Http\Controllers\Api\SubjectController@update  | api          |
+    |        | GET|HEAD  | api/subject/{subject} | subject.show    | App\Http\Controllers\Api\SubjectController@show    | api          |
+    +--------+-----------+-----------------------+-----------------+----------------------------------------------------+--------------+
+
+     
