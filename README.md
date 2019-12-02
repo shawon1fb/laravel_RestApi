@@ -7,10 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Project
+# About Project
 This is a basic Laravel project with JWT token. Here implemented basic CRUD operations and Authentication.
 
-## post requests
+#Authentication
+##Request method POST ::
 Login:  www.example.com/api/auth/login<br> 
     body:
     
@@ -54,3 +55,26 @@ payload response:
     "nam": "Shahanul Shaheb"
  
  
+#CRUD operations
+#####Details coming soon ...
+
+#Route List
+
+     | GET|HEAD  | /                     |                 | Closure                                            | web          |
+    |        | POST      | api/auth/login        |                 | App\Http\Controllers\AuthController@login          | api          |
+    |        | POST      | api/auth/logout       |                 | App\Http\Controllers\AuthController@logout         | api,auth:api |
+    |        | POST      | api/auth/me           |                 | App\Http\Controllers\AuthController@me             | api,auth:api |
+    |        | POST      | api/auth/payload      |                 | App\Http\Controllers\AuthController@payload        | api,auth:api |
+    |        | POST      | api/auth/refresh      |                 | App\Http\Controllers\AuthController@refresh        | api,auth:api |
+    |        | POST      | api/auth/register     |                 | App\Http\Controllers\AuthController@register       | api          |
+    |        | POST      | api/class             |                 | App\Http\Controllers\Api\clssesController@store    | api          |
+    |        | GET|HEAD  | api/class             |                 | App\Http\Controllers\Api\clssesController@index    | api          |
+    |        | POST      | api/class/update      |                 | App\Http\Controllers\Api\clssesController@update   | api          |
+    |        | DELETE    | api/class/{id}        |                 | App\Http\Controllers\Api\clssesController@destroy  | api          |
+    |        | GET|HEAD  | api/studet            | studet.index    | App\Http\Controllers\Api\StudentController@index   | api          |
+    |        | POST      | api/studet            | studet.store    | App\Http\Controllers\Api\StudentController@store   | api          |
+    |        | GET|HEAD  | api/studet/{studet}   | studet.show     | App\Http\Controllers\Api\StudentController@show    | api          |
+    |        | PUT|PATCH | api/studet/{studet}   | studet.update   | App\Http\Controllers\Api\StudentController@update  | api          |
+    |        | DELETE    | api/studet/{studet}   | studet.destroy  | App\Http\Controllers\Api\StudentController@destroy | api          |
+    |        | POST      | api/subject           | subject.store   | App\Http\Controllers\Api\SubjectController@store   | api          |
+    |        | GET|HEAD  | api/subject           
